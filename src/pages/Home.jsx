@@ -1,12 +1,14 @@
 import React from 'react'
-import Main from '../components/Main';
+import Banner from '../components/Banner';
 import Row from '../components/Row';
 import requests from '../Request';
+import BannerRow from '../components/BannerRow';
 
 const Home = () => {
   return (
     <>
-        <Main/>
+        <Banner/>
+        <BannerRow/>
         <Row rowID = '1' title='UpComing' fetchURL={requests.requestUpcoming}/>
         <Row rowID = '2' title='Popular' fetchURL={requests.requestPopular}/>
         <Row rowID = '3' title='Trending' fetchURL={requests.requestTrending}/>
