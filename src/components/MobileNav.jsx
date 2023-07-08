@@ -41,7 +41,7 @@ const MobileNav = () => {
       
   return (
     <>
-      <div className="p-6 absolute top-20 right-0 mx-4 my-2 min-w-[240px] flex bg-[#1b1b1b] rounded-xl tilt-in-fwd-tr shadow-md z-10 ">
+      <div className="p-6 absolute top-[7.5rem] right-0 mx-4 my-2 min-w-[240px] flex bg-[#1b1b1b]  rounded-b-2xl tilt-in-fwd-tr shadow-md z-10 ">
       <ul className="flex flex-col space-y-8 text-white align-center justify-center items-start align-center    ">
       {
           data.map((item)=>(

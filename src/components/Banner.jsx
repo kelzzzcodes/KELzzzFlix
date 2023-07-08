@@ -3,7 +3,7 @@ import React, { useState , useEffect} from 'react'
 import { Link } from 'react-router-dom';
 import requests from '../Request'
 
-const Main = () => {
+const Banner = () => {
     const [movies, setMovies] = useState([]);
 
     const movie = movies[Math.floor(Math.random() * movies.length)]
@@ -40,7 +40,7 @@ const Main = () => {
     <p className='text-gray-400 text-xl border-l-2  border-[#E50916]'><span className='ml-2'>Popularity: {movie?.popularity}</span></p>
        </div>
      <p>
-     <Link to='' className="bg-[#E50916] px-8 py-6 rounded cursor-pointer text-white">
+     <Link to='' className="bg-[#E50916] px-16 py-6 rounded cursor-pointer text-white">
             Watch Now
           </Link> 
      </p>
@@ -50,4 +50,4 @@ const Main = () => {
   )
 }
 
-export default Main
+export default Banner

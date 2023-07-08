@@ -4,11 +4,15 @@ import Row from '../components/Row';
 import requests from '../Request';
 import BannerRow from '../components/BannerRow';
 
+import Main from '../components/Main';
+
 const Home = () => {
   return (
     <>
         <Banner/>
         <BannerRow/>
+    
+        <Main/>
         <Row rowID = '1' title='UpComing' fetchURL={requests.requestUpcoming}/>
         <Row rowID = '2' title='Popular' fetchURL={requests.requestPopular}/>
         <Row rowID = '3' title='Trending' fetchURL={requests.requestTrending}/>

@@ -8,7 +8,7 @@ const RightNav = () => {
   const [toggleMenu, setToggleMenu] = useState(false)
   return (
     <>
-      <div className="flex p-2 items-center gap-4 text-white">
+      <div className="flex p-4 items-center gap-4 text-white">
         <div className="flex items-center">
           <Link to="signin">
             <BsPerson className="bg-gray-500 rounded-full" size={32} />
@@ -16,19 +16,21 @@ const RightNav = () => {
        
         </div>
 
-        {toggleMenu ? (
+      <div>
+      {toggleMenu ? (
           <AiOutlineClose
             onClick={() => setToggleMenu(!toggleMenu)}
-            className="cursor-pointer"
-            size={32}
+            className=" bg-white rounded-md text-black  flex cursor-pointer"
+            size={28}
           />
         ) : (
           <AiOutlineMenu
             onClick={() => setToggleMenu(!toggleMenu)}
-            className="bg-white rounded-md text-black cursor-pointer flex lg:hidden"
+            className="bg-white rounded-md text-black cursor-pointer  flex lg:hidden"
             size={32}
           />
         )}
+      </div>
         <div className={`${!toggleMenu ? 'hidden': 'flex'}`}>
             <MobileNav/>
         </div>
