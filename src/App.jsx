@@ -5,6 +5,7 @@ import Navbar from './components/Navbar'
 import { AuthContextProvider } from './context/AuthContext';
 import { Account,Login, Home, Signup } from './pages';
 import ProtectedRoute from './components/ProtectedRoute';
+import Footer from './components/Footer';
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
         <Account/>
         </ProtectedRoute>}/>
      </Routes>
+     <Footer/>
 
     </AuthContextProvider>
     </>

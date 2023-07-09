@@ -5,7 +5,7 @@ const MainButton = () => {
     <>
        
            <div className='flex justify-end'>
-           <div className='flex gap-16'>
+           <div className='flex gap-16 text-white'>
             
                   <p>All</p>
                   <p>Today</p>
