@@ -1,18 +1,14 @@
 import React from 'react'
 import MainButton from './MainButton'
-import MainRow from './MainRow';
+import MainRow from './MainRow'
+import requests from '../Request'
 const Main = () => {
   return (
-    <div className=' my-16  py-8 px-32'>
+    <div className="p-16">
+      <MainButton />
 
-     
-      <MainButton/>
-     
-     <MainRow/>
-     <MainRow/>
-     <MainRow/>
-      
-
+      <MainRow RowID={1} title="TopRated" fetchURL={requests.requestTopRated} />
+      <MainRow RowID={2} title="Popular" fetchURL={requests.requestPopular} />
     </div>
   )
 }
