@@ -22,8 +22,8 @@ const MainRow = ({ title, fetchURL, RowID }) => {
     slider.scrollLeft = slider.scrollLeft + 500
   }
   return (
-    <div className="flex flex-col items-center gap-10">
-      <div className=" mt-8 flex flex-col text-white gap-2 items-center">
+    <div className="flex flex-col items-center gap-6">
+      <div className=" mt-8 flex flex-col text-white gap-4 items-center">
         <div>
           <p className="text-2xl">{title}</p>
         </div>
