@@ -4,7 +4,7 @@ import MainRow from './MainRow'
 import requests from '../Request'
 const Main = () => {
   return (
-    <div className="p-16">
+    <div className="p-4 md:p-8 lg:p-16">
       <MainButton />
 
       <MainRow RowID={1} title="TopRated" fetchURL={requests.requestTopRated} />
