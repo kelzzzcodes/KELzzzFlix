@@ -25,13 +25,14 @@ const RightNav = () => {
           ) : (
             <AiOutlineMenu
               onClick={() => setToggleMenu(!toggleMenu)}
-              className="bg-white rounded-md text-black cursor-pointer  flex lg:hidden"
+              className="bg-white rounded-md text-black cursor-pointer flex lg:hidden"
               size={32}
             />
           )}
-        </div>
-        <div className={`${!toggleMenu ? 'hidden' : 'flex'}`}>
-          <MobileNav />
+
+          <div className={`${!toggleMenu ? 'hidden' : 'flex'}`}>
+            <MobileNav />
+          </div>
         </div>
       </div>
     </>
