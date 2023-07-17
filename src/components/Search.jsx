@@ -10,7 +10,7 @@ const Search = () => {
         {toggleMenu ? (
           <AiOutlineSearch
             onClick={() => setToggleMenu(!toggleMenu)}
-            className=" cursor-pointer hidden"
+            className=" cursor-pointer"
             size={32}
           />
         ) : (
@@ -29,9 +29,9 @@ const Search = () => {
                   onClick={() => setToggleMenu(!toggleMenu)}
                   size={28}
                 />
-                <div className="flex justify-center items-center m-auto border-2 border-gray-700 rounded-full p-2 ">
+                <div className="flex  md:w-[450px] lg:w-[600px] justify-center items-center m-auto border-2 border-gray-700 rounded-full p-2 ">
                   <input
-                    className="bg-transparent outline-none border-none placeholder:text-black "
+                    className="w-full bg-transparent outline-none border-none placeholder:text-black "
                     type="search"
                     placeholder="Search..."
                     name=""

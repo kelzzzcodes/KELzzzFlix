@@ -20,7 +20,7 @@ const RightNav = () => {
             <AiOutlineClose
               onClick={() => setToggleMenu(!toggleMenu)}
               className=" bg-white rounded-md text-black  flex cursor-pointer"
-              size={28}
+              size={32}
             />
           ) : (
             <AiOutlineMenu

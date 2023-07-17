@@ -33,7 +33,7 @@ const BannerRow = () => {
 
       <div
         id={'Bannerslider'}
-        className="w-full grid grid-flow-col gap-5 h-full overflow-x-scroll whitespace-nowrap scroll-smooth  scrollbar-hide relative"
+        className="w-full grid grid-flow-col h-full overflow-x-scroll whitespace-nowrap scroll-smooth  scrollbar-hide relative"
       >
         {movies.map((item, id) => (
           <BannerCard key={id} item={item} />
