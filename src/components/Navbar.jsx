@@ -5,8 +5,19 @@ import Search from './Search'
 import RightNav from './RightNav'
 
 const Navbar = () => {
+  const [navBgColor,setNavBgColor] = useState(false)
+  const handleBgColor =()=>{
+    if(window.scrollY >= 70){
+      setNavBgColor(true)
+    }else{
+      setNavBgColor(false)
+    }
+
+  }
+  window.addEventListener('scroll',handleBgColor)
+
   return (
-    <div className="w-full flex items-center justify-between px-4 py-10 lg:py-16 z-[100]  fixed h-[70px]  border-b-2  border-gray-50/20">
+    <div className={`w-full flex items-center justify-between px-4 py-10 lg:py-16 z-[100]  fixed h-[70px]  border-b-2  border-gray-50/20 ${navBgColor ? 'bg-black/90' : ' bg-transparent'}`}>
       <Link to="/">
         <h1 className="text-red-600 text-4xl font-bold cursor-pointer">
           KELzzzFlix
