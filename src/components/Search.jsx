@@ -10,7 +10,7 @@ const Search = () => {
         {toggleMenu ? (
           <AiOutlineSearch
             onClick={() => setToggleMenu(!toggleMenu)}
-            className="hidden"
+            className="flex  text-transparent"
             size={32}
           />
         ) : (
