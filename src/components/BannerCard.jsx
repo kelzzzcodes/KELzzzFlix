@@ -22,7 +22,7 @@ const BannerCard = ({ item }) => {
             />
           </Link>
           <div className="mt-4 flex  flex-col gap-2 p-2 items-start md:items-center justify-start">
-            <h2 className=" flex  text-sm md:text-lg font-bold">{item?.title}</h2>
+            <h2 className=" flex text-sm md:text-lg font-bold">{item?.title}</h2>
             <ul className=" flex flex-col  md:items-center  md:flex-row gap-2">
               <li>
                 <p>{handleSplit(item?.release_date)}</p>

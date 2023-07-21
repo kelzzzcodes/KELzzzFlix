@@ -8,6 +8,7 @@ module.exports = {
       body: ['Open Sans', 'sans-serif'],
     },
     extend: {
+
       screens: {
         mf: '990px',
       },
@@ -32,8 +33,8 @@ module.exports = {
     extend: {},
   },
   plugins: [
-    require('tailwind-scrollbar-hide')
+    require('tailwind-scrollbar-hide'),
+    require('@tailwindcss/line-clamp'),
+
   ],
- 
-  
 }

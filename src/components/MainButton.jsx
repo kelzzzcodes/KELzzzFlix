@@ -11,6 +11,8 @@ const MainButton = () => {
           <Link to='/' className="bg-transparent border-2 border-gray-700 py-2 px-4  cursor-pointer text-white  rounded-full ">Last7Days</Link>
           <Link to='/' className="bg-transparent border-2 border-gray-700 py-2 px-4  cursor-pointer text-white  rounded-full " >Last30Days</Link>
         </div>
+
+
       </div>
     </>
   )

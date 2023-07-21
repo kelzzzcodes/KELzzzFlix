@@ -14,13 +14,7 @@ const Banner = () => {
     })
   }, [])
 
-  const truncateString = (str, num) => {
-    if (str?.length > num) {
-      return str.slice(0, num) + '...'
-    } else {
-      return str
-    }
-  }
+
 
   return (
     <div className="w-full h-[700px] text-white">
@@ -35,8 +29,8 @@ const Banner = () => {
         <div className="absolute flex flex-col gap-8 w-full top-[15%] lg:top-[20%] p-4 md:px-16 lg:px-32 ">
           <h1 className="text-xl md:text-3xl lg:text-5xl font-bold">{movie?.title}</h1>
 
-          <p className="w-full md:max-w-[70%] lg:max-w-[50%] xl:max-w-[35%] text-gray-200  text-lg md:text-xl">
-            {truncateString(movie?.overview, 150)}
+          <p className="w-full line-clamp-3 md:max-w-[70%] lg:max-w-[50%] xl:max-w-[35%] text-gray-200  text-lg md:text-xl">
+            {movie?.overview}
           </p>
           <div className="flex flex-col md:flex-row md:items-center gap-2 text- md:text-xl   ">
             <p className="text-gray-400 ">

@@ -37,7 +37,7 @@ const Footer = () => {
   return (
     <div className="w-full flex flex-col bg-[#000000]">
       <div className="flex  border-b-2  border-gray-50/20  ">
-        <div className=" flex flex-col gap-10 lg:flex-row mx-auto lg:gap-28  py-8  mb-6">
+        <div className=" flex flex-col gap-10 lg:flex-row   mx-auto lg:gap-28  py-8  mb-6">
           <div className="text-white flex flex-col gap-4 ">
             <h2 className=" font-bold text-2xl">Contact Info</h2>
             <div className="flex flex-col gap-2">
@@ -56,6 +56,7 @@ const Footer = () => {
                 <SiGmail size={24} />
                 <span>kelzzzcodes@gmail.com</span>
               </Link>
+
             </div>
 
             <div className="flex gap-2 items-center">
