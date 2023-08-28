@@ -3,7 +3,8 @@ import axios from 'axios'
 import MainCard from './MainCard'
 import { MdChevronLeft, MdChevronRight } from 'react-icons/md'
 
-const MainRow = ({ title, fetchURL, RowID }) => {
+
+const MainRow = ({ cardID,title, fetchURL, RowID }) => {
   const [movies, setMovies] = useState([])
 
   useEffect(() => {
@@ -22,10 +23,10 @@ const MainRow = ({ title, fetchURL, RowID }) => {
     slider.scrollLeft = slider.scrollLeft + 500
   }
   return (
-    <div className="flex flex-col items-center gap-6">
+    <div  id={cardID} className="flex flex-col items-center mt-4 ">
       <div className=" mt-8 flex flex-col text-white gap-4 items-center">
-        <div>
-          <p className="text-2xl">{title}</p>
+        <div >
+          <p  className="text-2xl">{title}</p>
         </div>
         <div className="flex justify-around  gap-5">
           <MdChevronLeft

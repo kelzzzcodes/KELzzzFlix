@@ -1,30 +1,29 @@
 import { Routes, Route } from 'react-router-dom'
 
 import './App.css'
-import Navbar from './components/Navbar'
-import { AuthContextProvider } from './context/AuthContext';
-import { Account,Login, Home, Signup } from './pages';
-import ProtectedRoute from './components/ProtectedRoute';
-import Footer from './components/Footer';
+import {Navbar,Footer } from './components';
+import { Home, } from './pages';
+import MovieDetails from './components/MovieDetails';
+
+
+
 
 const App = () => {
   return (
     <>
-    <AuthContextProvider>
+
 
      <Navbar/>
 
      <Routes>
       <Route path='/' element={<Home/>}/>
-      <Route path='/login' element={<Login/>}/>
-      <Route path='/signup' element={<Signup/>}/>
-      <Route path='/account' element={<ProtectedRoute>
-        <Account/>
-        </ProtectedRoute>}/>
+      <Route path='moviedetails' element={<MovieDetails/>}/>
+
+
      </Routes>
      <Footer/>
 
-    </AuthContextProvider>
+
     </>
   )
 }

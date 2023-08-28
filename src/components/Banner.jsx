@@ -17,17 +17,17 @@ const Banner = () => {
 
 
   return (
-    <div className="w-full h-[700px] text-white">
-      <div className="w-full h-full">
-        <div className="w-full h-[700px] absolute bg-gradient-to-r from-black"></div>
+    <div id='/' className="w-full h-[800px] text-white">
+      <div className="w-full h-[800px]">
+        <div className="w-full h-full absolute bottom-0 bg-gradient-to-r from-black"></div>
         <img
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover "
           src={`https://image.tmdb.org/t/p/original/${movie?.backdrop_path}`}
           alt={movie?.title}
         />
 
         <div className="absolute flex flex-col gap-8 w-full top-[15%] lg:top-[20%] p-4 md:px-16 lg:px-32 ">
-          <h1 className="text-xl md:text-3xl lg:text-5xl font-bold">{movie?.title}</h1>
+          <h1 className="text-xl mt-8 md:text-3xl lg:text-5xl font-bold">{movie?.title}</h1>
 
           <p className="w-full line-clamp-3 md:max-w-[70%] lg:max-w-[50%] xl:max-w-[35%] text-gray-200  text-lg md:text-xl">
             {movie?.overview}

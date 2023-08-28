@@ -1,17 +1,14 @@
 import React from 'react'
-import MainButton from './MainButton'
 import MainRow from './MainRow'
 import requests from '../Request'
 const Main = () => {
   return (
     <div className="p-4 md:p-8 lg:p-16">
-      <MainButton />
-
-      <MainRow RowID={1} title="TopRated" fetchURL={requests.requestTopRated} />
-      <MainRow RowID={2} title="Popular" fetchURL={requests.requestPopular} />
-      <MainRow RowID={3} title="UpComing" fetchURL={requests.requestUpcoming}/>
-      <MainRow RowID={4} title="Horror" fetchURL={requests.requestHorror} />
-      <MainRow RowID={5} title="Trending" fetchURL={requests.requestTrending} />
+      <MainRow RowID={1} cardID='toprated' title="Top Rated" fetchURL={requests.requestTopRated} />
+      <MainRow RowID={2} cardID='popular' title="Popular" fetchURL={requests.requestPopular} />
+      <MainRow RowID={3} cardID='upcoming' title="Up Coming" fetchURL={requests.requestUpcoming}/>
+      <MainRow RowID={4} cardID='horror' title="Horror" fetchURL={requests.requestHorror} />
+      <MainRow RowID={5} cardID='trending' title="Trending" fetchURL={requests.requestTrending} />
     </div>
   )
 }
