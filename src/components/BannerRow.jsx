@@ -24,26 +24,25 @@ const BannerRow = () => {
     slider.scrollLeft = slider.scrollLeft + 500
   }
   return (
-    <div className="relative  flex items-center  w-full bottom-16  bg-[#2a2f34]/30">
+    <div className="relative flex items-center w-full bottom-16 bg-[#2a2f34]/30">
       <MdChevronLeft
         onClick={sliderLeft}
         size={40}
-        className="bg-gray-500/50 hover:bg-white rounded-full cursor-pointer absolute left-0 z-10 "
+        className="bg-gray-500/50 hover:bg-white rounded-full cursor-pointer absolute left-0 z-10  ml-2 "
       />
-
       <div
         id={'Bannerslider'}
         className="w-full grid grid-flow-col h-full overflow-x-scroll whitespace-nowrap scroll-smooth  scrollbar-hide relative"
       >
-        {movies.map((item, id) => (
-          <BannerCard key={id} item={item} />
+        {movies.map((movie, id) => (
+          <BannerCard key={id} movie={movie} />
         ))}
       </div>
 
       <MdChevronRight
         onClick={sliderRight}
         size={40}
-        className="bg-gray-500/50 hover:bg-white rounded-full cursor-pointer absolute right-0 z-10 "
+        className="bg-gray-500/50 hover:bg-white rounded-full cursor-pointer absolute right-0 z-10 mr-2"
       />
     </div>
   )
