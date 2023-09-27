@@ -1,29 +1,20 @@
 import { Routes, Route } from 'react-router-dom'
 
 import './App.css'
-import {Navbar,Footer } from './components';
-import { Home, } from './pages';
-import MovieDetails from './components/MovieDetails';
-
-
-
+import { Navbar, Footer } from './components'
+import { Home } from './pages'
+import MovieDetails from './components/MovieDetails'
 
 const App = () => {
   return (
     <>
+      <Navbar />
 
-
-     <Navbar/>
-
-     <Routes>
-      <Route path='/' element={<Home/>}/>
-      <Route path='moviedetails' element={<MovieDetails/>}/>
-
-
-     </Routes>
-     <Footer/>
-
-
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="movie/:movieId" element={<MovieDetails />} />
+      </Routes>
+      <Footer />
     </>
   )
 }
